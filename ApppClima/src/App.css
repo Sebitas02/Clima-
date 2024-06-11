@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Color de fondo claro y moderno */
+  color: #212529; /* Color de texto oscuro */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura total de la ventana */
+}
+
+.contenedor {
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffffff; /* Color de fondo del contenedor */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  padding: 20px;
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.encabezado {
+  padding-bottom: 20px;
+  color: #343a40;
+}
+
+.encabezado h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.barra-busqueda {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.barra-busqueda input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 25px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.barra-busqueda input:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+.tarjeta-clima {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.tarjeta-clima h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  text-align: center; /* Texto centrado */
+}
+
+.icono-clima img {
+  width: 150px;
+  height: 150px;
+}
+
+.info-clima {
+  margin-top: 20px;
+}
+
+.info-clima p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.info-clima p strong {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.navegacion {
+  margin-top: 20px; /* Espacio adicional en la parte superior */
+}
+
+.navegacion a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.navegacion a:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    padding: 10px;
+  }
+
+  .barra-busqueda input {
+    width: 100%;
+  }
+
+  .tarjeta-clima {
+    padding: 15px;
+  }
+
+  .icono-clima img {
+    width: 100px;
+    height: 100px;
+  }
+}
